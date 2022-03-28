@@ -1,0 +1,8 @@
+version : '3.9'
+services:
+    core_api:
+        image: asia.gcr.io/demoapp-containerize/helloworldapp:latest
+        ports:
+            - "8000:5000"
+        volumes:
+            - ./main.py:/main.py
